@@ -6,8 +6,7 @@ import java.io.InputStream;
 
 public class XmlParser implements AddressParser {
 
-    //формат: <item city="Барнаул" street="Дальняя улица" house="56" floor="2" />
-    //используем StAX - он читает файл по частям, а DOM загрузил бы все 200+ мб в память
+
     @Override
     public void parse(String filePath, Statistics statistics) throws Exception {
         XMLInputFactory factory = XMLInputFactory.newInstance();
